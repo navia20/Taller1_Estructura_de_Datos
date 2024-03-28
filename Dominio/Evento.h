@@ -1,5 +1,7 @@
 #pragma once
+#include "Asistente.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 
 class Evento {
@@ -8,6 +10,8 @@ private:
     int duracion;
     string ubicacion;
     string tema;
+    vector<Asistente> asistentesPresentes;
+
 public:
     Evento(string tipoEvento, int duracion, string ubicacion, string tema);
     string getTipoEvento();
@@ -18,6 +22,8 @@ public:
     void setUbicacion(string);
     string getTema();
     void setTema(string);
+    void agregarAsistente(Asistente asistente);
+    vector<Asistente> getAsistentesPresentes();
 };
 
- 
+
