@@ -8,15 +8,24 @@ using namespace std;
 class Sistema{
     private:
         vector<Asistente*> listaAsistentes;
-        vector<Evento*> listaEvento;
+        vector<Evento*> listaEventos;
         
     public:
-        Sistema() =default;
-        void agregarAsistente(Asistente* asistente);
-        void agregarEvento(Evento* evento);
-        void generarInformeEventosProgramados();
-        void generarInformeAsistentesPorEvento();
-        void generarEstadisticasAsistenciaEventos();
-        void generarDetallesAsistentes();
-        void obtenerInformacionEvento(Evento* evento);
+        
+        Sistema() = default;
+        void print(string text);
+        void alarm(string text); 
+        void cleanConsole(); 
+        int IntInput(string texto); 
+        string StringInput(string text);
+        bool BoolInput(string texto);
+        
+        void registrarAsistente(Evento* evento);
+        void crearEvento();
+        void consultarListaAsistentes();
+        void consultarListaEventos();
+        void registrarAsistenteEventoExistente();
+        void numeroTotaldeAsistentes();
+        void promedioAsistentesEvento();
+        void edadPromedio();
 };

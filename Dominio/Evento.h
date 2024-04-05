@@ -10,7 +10,7 @@ private:
     int duracion;
     string ubicacion;
     string tema;
-    vector<Asistente> asistentesPresentes;
+    vector<Asistente*> asistentesRegistrados;
 
 public:
     Evento(string tipoEvento, int duracion, string ubicacion, string tema);
@@ -22,8 +22,9 @@ public:
     void setUbicacion(string);
     string getTema();
     void setTema(string);
-    void agregarAsistente(Asistente asistente);
-    vector<Asistente> getAsistentesPresentes();
+    void agregarAsistente(Asistente* asistente);
+    int obtenerCantidadAsistentes();
+    vector<Asistente *> getAsistentesPresentes();
 };
 
 

@@ -1,0 +1,11 @@
+Taller;2;Auditorio;Taller de Comunicacion Lenguas de Senas
+Tutor,Juan Carlos,40,Traductor Leguas de Seña,TVN
+Asistente,Matias,28,Periodista,TVN
+Asistente,Mario Hugo,50,Periodista,Chilevision
+Asistente,Patricia,25,Periodista,MIRADIO
+Reunion;2;Sala de Reuniones; Organizacion de Proyecto
+Gerente,Gonzalo,30,Jefe de Operaciones,Berliam
+Administrador,Javier,54,Administrador de Contratos,Berliam
+Empleado,Luis,64,Tasador,Antofagasta Minerals
+Empleado,Jorge,40,Ingeniero Civil Mecanico,Antofagasta Minerals
+Empleado,Sara,47,Arquitecta,MOP
