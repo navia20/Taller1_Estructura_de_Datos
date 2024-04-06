@@ -1,5 +1,4 @@
 #include "Asistente.h"
-using namespace std;
 
 Asistente::Asistente(string tipoAsistente, string nombre, int edad, string ocupacion, string empresa) {
     this->tipoAsistente = tipoAsistente;

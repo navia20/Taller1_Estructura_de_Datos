@@ -1,5 +1,8 @@
-#pragma once
 #include <iostream>
+#include <vector>
+#include <istream>
+#include <string>
+#include <fstream>
 using namespace std;
 
 class Asistente{

@@ -1,16 +1,8 @@
-#include <iostream>
-#include <fstream>
-#include "Sistema/Sistema.h"
-
-using namespace std;
-
-// Declaración de funciones
-void leerArchivo(const char* nombreArchivo);
-
-Sistema sistema = Sistema();
+#include "Sistema.cpp"
 
 int main(){
-    sistema.menu();
+    Sistema* sistema =  new Sistema();
+    sistema->menu();
     return 0;
 }
 

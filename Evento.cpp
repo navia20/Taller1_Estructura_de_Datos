@@ -1,7 +1,4 @@
 #include "Evento.h"
-#include "Asistente.h"
-#include <vector>
-using namespace std;
 
 Evento::Evento(string tipoEvento, int duracion, string ubicacion, string tema) {
     this->tipoEvento = tipoEvento;

@@ -1,12 +1,26 @@
 #include "Sistema.h"
-#include <iostream>
-#include "../Dominio/Asistente.h"
-#include "../Dominio/Evento.h"
-#include <vector>
-#include <istream>
-#include <string>
-using namespace std;
 
+Sistema::Sistema(){}
+void Sistema::menu(){
+	cout << "---Menu---" << endl;
+    cout << "1) Crear evento" << endl;
+    cout << "2) Registrar Asistente" << endl;
+    cout << "3) Generar Informes" << endl;
+    cout << "4) Salir" << endl;
+
+    int option = IntInput("Seleccione opcion:");
+    switch (option) {
+        case 1:
+            crearEvento();
+            break;
+        case 2:
+            registrarAsistenteEventoExistente();
+            break;
+        case 3:
+            informes();
+            break;
+    }
+}
 void Sistema::print(string text)    
 {
 	cout << text << endl;
@@ -175,26 +189,6 @@ void Sistema::promedioAsistentesEvento(){
 		cout << "Promedio Asistente del Evento: %" << (totalEvento/total)*100 << endl;
 }
 
-void Sistema::menu(){
-	cout << "---Menu---" << endl;
-    cout << "1) Crear evento" << endl;
-    cout << "2) Registrar Asistente" << endl;
-    cout << "3) Generar Informes" << endl;
-    cout << "4) Salir" << endl;
-
-    int option = IntInput("Seleccione opcion:");
-    switch (option) {
-        case 1:
-            crearEvento();
-            break;
-        case 2:
-            registrarAsistenteEventoExistente();
-            break;
-        case 3:
-            informes();
-            break;
-    }
-}
 void Sistema::informes(){
 	cout << "---Informes---" << endl;
     cout << "1) Lista de Eventos" << endl;

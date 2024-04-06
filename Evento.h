@@ -1,8 +1,4 @@
-#pragma once
-#include "Asistente.h"
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "Asistente.cpp"
 
 class Evento {
 private:
