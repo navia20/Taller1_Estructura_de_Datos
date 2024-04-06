@@ -175,4 +175,44 @@ void Sistema::promedioAsistentesEvento(){
 		cout << "Promedio Asistente del Evento: %" << (totalEvento/total)*100 << endl;
 }
 
+void Sistema::menu(){
+	cout << "---Menu---" << endl;
+    cout << "1) Crear evento" << endl;
+    cout << "2) Registrar Asistente" << endl;
+    cout << "3) Generar Informes" << endl;
+    cout << "4) Salir" << endl;
 
+    int option = IntInput("Seleccione opcion:");
+    switch (option) {
+        case 1:
+            crearEvento();
+            break;
+        case 2:
+            registrarAsistenteEventoExistente();
+            break;
+        case 3:
+            informes();
+            break;
+    }
+}
+void Sistema::informes(){
+	cout << "---Informes---" << endl;
+    cout << "1) Lista de Eventos" << endl;
+    cout << "2) Lista de Asistentes Registrados" << endl;
+    cout << "3) Estadisticas sobre la asistencia a los eventos" << endl;
+    cout << "4) Detalles sobre los asistentes" << endl;
+
+    int option = IntInput("Seleccione opcion:");
+    switch (option) {
+        case 1:
+            consultarListaEventos();
+            break;
+        case 2:
+         	consultarListaAsistentes();
+            break;
+        case 3:
+            numeroTotaldeAsistentes();
+            promedioAsistentesEvento();
+            break;
+}
+}

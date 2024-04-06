@@ -28,4 +28,6 @@ class Sistema{
         void numeroTotaldeAsistentes();
         void promedioAsistentesEvento();
         void edadPromedio();
+        void menu();
+        void informes();
 };
